@@ -16,6 +16,11 @@
             color: black; /* 글자 색상 검정색으로 */
         }
 
+ .form-check {
+        position: absolute;
+        top: 10px;
+        right: 10px; /* 페이지 오른쪽 상단에 위치 */
+    }
         
 </style>
 </head>
@@ -95,7 +100,31 @@
 		 	</tr>
 		 </table>
 	</div>
-	 
+
+	<!-- 다크모드 -->
+	<div class="form-check form-switch">
+		<input class="form-check-input" type="checkbox" id="mySwitch"
+			name="darkmode" value="yes" /> <label class="form-check-label"
+			for="mySwitch">Dark Mode</label>
+	</div>
+
+	<script>
+		const darkSwitch = document.querySelector("#mySwitch");
+		let isChecked = true;
+		darkSwitch.onclick = function() {
+			if (isChecked) {
+				document.querySelector("html").setAttribute("data-bs-theme",
+						"dark");
+				isChecked = false;
+			} else {
+				document.querySelector("html")
+						.setAttribute("data-bs-theme", "");
+				isChecked = true;
+			}
+		};
+	</script>
+
+
 </body>
 </html>
 

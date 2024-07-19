@@ -8,6 +8,13 @@
 <title>MVC게시판</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+ .form-check {
+        position: absolute;
+        top: 10px;
+        right: 10px; /* 페이지 오른쪽 상단에 위치 */
+    }
+</style>
 <script type="text/javascript" >
 	function validateForm(form){
 		if(form.name.value==""){
@@ -85,5 +92,27 @@
 			</tr>
 		</table>
 	</form>
+	<!-- 다크모드 -->
+	<div class="form-check form-switch">
+		<input class="form-check-input" type="checkbox" id="mySwitch"
+			name="darkmode" value="yes" /> <label class="form-check-label"
+			for="mySwitch">Dark Mode</label>
+	</div>
+
+	<script>
+		const darkSwitch = document.querySelector("#mySwitch");
+		let isChecked = true;
+		darkSwitch.onclick = function() {
+			if (isChecked) {
+				document.querySelector("html").setAttribute("data-bs-theme",
+						"dark");
+				isChecked = false;
+			} else {
+				document.querySelector("html")
+						.setAttribute("data-bs-theme", "");
+				isChecked = true;
+			}
+		};
+	</script>
 </body>
 </html>
