@@ -15,6 +15,8 @@
 	 .pagination a {
             color: black; /* 글자 색상 검정색으로 */
         }
+
+        
 </style>
 </head>
 <body>
@@ -37,6 +39,7 @@
 			</tr>
 			</table>
 		</form>
+	</div>
 		<!-- 검색폼.end -->
 		
 		 <table class="table table-hover"  width="90%">
