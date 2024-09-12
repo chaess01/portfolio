@@ -34,10 +34,8 @@
             
             /* 이미지가 슬라이더 크기에 맞게 조정됨 */
             .slick-slide img {
-                width: 100%;
-                height: auto;
-                max-height: 500px; /* 슬라이더 최대 높이 설정 */
-                object-fit: cover; /* 이미지가 슬라이더 크기에 맞춰짐 */
+                max-width: 100%;  /* 슬라이더 너비에 맞게 */
+                height: auto;  /* 비율 유지하며 높이 자동 조정 */
             }
 
             /* 슬라이더 컨테이너 크기 */
@@ -45,6 +43,12 @@
                 width: 100%;
                 max-width: 800px; /* 슬라이더 최대 너비 */
                 margin: 0 auto;
+            }
+
+            /* 슬라이더 이미지 크기 고정 */
+            .slick-slide div {
+                width: 100%;
+                max-height: 500px; /* 슬라이더 최대 높이 */
             }
         </style>
     </head>
@@ -94,8 +98,8 @@
                         <div class="autoplay">
                             <div class="your-class">
                                 <div><img src="popdaycapture/main.png" alt="Project Screenshot 1"></div>
-                                <div><img src="popdaycapture/list.png" alt="Project Screenshot 2"></div>
-                                <div><img src="popdaycapture/marchlist.png" alt="Project Screenshot 3"></div>
+                                <div><img src="popdaycapture/screenshot2.png" alt="Project Screenshot 2"></div>
+                                <div><img src="popdaycapture/screenshot3.png" alt="Project Screenshot 3"></div>
                             </div>
                         </div>
 
@@ -151,8 +155,7 @@
                     autoplaySpeed: 2000,
                     dots: true,
                     arrows: true,  /* 화살표 추가 */
-                    centerMode: true,  /* 이미지를 슬라이더 가운데에 */
-                    variableWidth: true,  /* 가변 너비로 이미지 크기에 맞게 슬라이더가 조정됨 */
+                    adaptiveHeight: true, /* 슬라이더 높이를 이미지에 맞춤 */
                 });
             });
         </script>
