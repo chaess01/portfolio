@@ -63,173 +63,140 @@ window.addEventListener('DOMContentLoaded', event => {
 // 캐러셀 이미지 데이터 정의
 const popdayImages = [
     {
-        src: 'assets/img/pop/main.png',
-        caption: '첫 번째 이미지',
-        description: '메인페이지(케러셀)'
+        src: 'assets/img/pop/main.png'
+        
     },
     {
-        src: 'assets/img/pop/list.png',
-        caption: '두 번째 이미지',
-        description: '리스트 페이지'
+        src: 'assets/img/pop/list.png'
+       
     },
     {
-        src: 'assets/img/pop/marchlist.png',
-        caption: '세 번째 이미지',
-        description: '카테고리 페이지'
+        src: 'assets/img/pop/marchlist.png'
+        
     },
     {
-        src: 'assets/img/pop/login1.png',
-        caption: '세 번째 이미지',
-        description: '로그인 페이지'
+        src: 'assets/img/pop/login1.png'
+       
     },
     {
-        src: 'assets/img/pop/enter.png',
-        caption: '세 번째 이미지',
-        description: '회원가입 페이지'
+        src: 'assets/img/pop/enter.png'
+     
     },
     {
-        src: 'assets/img/pop/login.png',
-        caption: '세 번째 이미지',
-        description: '사용자 페이지'
+        src: 'assets/img/pop/login.png'
+   
     },
     {
-        src: 'assets/img/pop/user.png',
-        caption: '세 번째 이미지',
-        description: '회원수정 페이지'
+        src: 'assets/img/pop/user.png'
+       
     },
     {
-        src: 'assets/img/pop/registe.png',
-        caption: '세 번째 이미지',
-        description: '등록페이지1'
+        src: 'assets/img/pop/registe.png'
+     
     },
     {
-        src: 'assets/img/pop/registe1.png',
-        caption: '세 번째 이미지',
-        description: '등록페이지2'
+        src: 'assets/img/pop/registe1.png'
+        
     },
     {
-        src: 'assets/img/pop/registe2.png',
-        caption: '세 번째 이미지',
-        description: '등록페이지3'
+        src: 'assets/img/pop/registe2.png'
+    
     },
     {
-        src: 'assets/img/pop/modify.png',
-        caption: '세 번째 이미지',
-        description: '수정 페이지'
+        src: 'assets/img/pop/modify.png'
+       
     },
     {
-        src: 'assets/img/pop/delete.png',
-        caption: '세 번째 이미지',
-        description: '삭제 모달창'
+        src: 'assets/img/pop/delete.png'
+       
     }
 ];
 
 //newjeans
 const newjeansImages = [
     {
-        src: 'assets/img/new/1.png',
-        caption: '첫 번째 이미지',
-        description: '메인페이지(케러셀)'
+        src: 'assets/img/new/1.png'
+       
     },
     {
-        src: 'assets/img/new/2.png',
-        caption: '두 번째 이미지',
-        description: '리스트 페이지'
+        src: 'assets/img/new/2.png'
+      
     },
     {
-        src: 'assets/img/new/3.png',
-        caption: '세 번째 이미지',
-        description: '카테고리 페이지'
+        src: 'assets/img/new/3.png'
+       
     },
     {
-        src: 'assets/img/new/4.png',
-        caption: '세 번째 이미지',
-        description: '로그인 페이지'
+        src: 'assets/img/new/4.png'
+        
     },
     {
-        src: 'assets/img/new/5.png',
-        caption: '세 번째 이미지',
-        description: '회원가입 페이지'
+        src: 'assets/img/new/5.png'
+        
     },
     {
-        src: 'assets/img/new/6.png',
-        caption: '세 번째 이미지',
-        description: '사용자 페이지'
+        src: 'assets/img/new/6.png'
+       
     },
     {
-        src: 'assets/img/new/7.png',
-        caption: '세 번째 이미지',
-        description: '회원수정 페이지'
+        src: 'assets/img/new/7.png'
+      
     },
     {
-        src: 'assets/img/new/8.png',
-        caption: '세 번째 이미지',
-        description: '등록페이지1'
+        src: 'assets/img/new/8.png'
+       
     },
     {
-        src: 'assets/img/new/9.png',
-        caption: '세 번째 이미지',
-        description: '등록페이지2'
+        src: 'assets/img/new/9.png'
+       
     },
     {
-        src: 'assets/img/new/10.png',
-        caption: '세 번째 이미지',
-        description: '등록페이지3'
+        src: 'assets/img/new/10.png'
+      
     },
     {
-        src: 'assets/img/new/11.png',
-        caption: '세 번째 이미지',
-        description: '수정 페이지'
+        src: 'assets/img/new/11.png'
+      
     },
     {
-        src: 'assets/img/new/12.png',
-        caption: '세 번째 이미지',
-        description: '수정 페이지'
+        src: 'assets/img/new/12.png'
+      
     },
     {
-        src: 'assets/img/new/13.png',
-        caption: '세 번째 이미지',
-        description: '수정 페이지'
+        src: 'assets/img/new/13.png'
+    
     },
     {
-        src: 'assets/img/new/14.png',
-        caption: '세 번째 이미지',
-        description: '수정 페이지'
+        src: 'assets/img/new/14.png'
+ 
     },
     {
-        src: 'assets/img/new/15.png',
-        caption: '세 번째 이미지',
-        description: '수정 페이지'
+        src: 'assets/img/new/15.png'
+     
     },
     {
-        src: 'assets/img/new/16.png',
-        caption: '세 번째 이미지',
-        description: '수정 페이지'
+        src: 'assets/img/new/16.png'
+      
     },
     {
-        src: 'assets/img/new/17.png',
-        caption: '세 번째 이미지',
-        description: '수정 페이지'
+        src: 'assets/img/new/17.png'
+       
     },
     {
-        src: 'assets/img/new/18.png',
-        caption: '세 번째 이미지',
-        description: '수정 페이지'
+        src: 'assets/img/new/18.png'
+       
     },
     {
-        src: 'assets/img/new/19.png',
-        caption: '세 번째 이미지',
-        description: '수정 페이지'
+        src: 'assets/img/new/19.png'
+    
     },
     {
-        src: 'assets/img/new/20.png',
-        caption: '세 번째 이미지',
-        description: '수정 페이지'
+        src: 'assets/img/new/20.png'
+       
     },
     {
-        src: 'assets/img/new/21.png',
-        caption: '세 번째 이미지',
-        description: '삭제 모달창'
+        src: 'assets/img/new/21.png'
+    
     }
 ];
 
